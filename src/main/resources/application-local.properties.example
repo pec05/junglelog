@@ -1,0 +1,6 @@
+spring.datasource.username=
+spring.datasource.password=
+
+app.jwt.secret=
+
+riot.api.key=
