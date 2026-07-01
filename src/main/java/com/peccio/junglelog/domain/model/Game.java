@@ -40,4 +40,7 @@ public class Game {
     @OneToMany(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
     @Builder.Default
     private List<GankEntry> ganks = new ArrayList<>();
+
+    @OneToOne(mappedBy = "game", cascade = CascadeType.ALL, orphanRemoval = true)
+    private MentalNote mentalNote;
 }
